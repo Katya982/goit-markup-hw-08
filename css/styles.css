@@ -51,6 +51,23 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+.site-nav .link-studio {
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.site-nav .link-portfolio {
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
 
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -104,8 +121,8 @@ body {
 
 .button:hover,
 .button:focus {
-    background-color: #188CE8;
     color: #ffffff;
+    background-color: #188CE8;
 }
 
 /* features */
@@ -185,3 +202,36 @@ body {
 .footer-contacts a:focus {
   color: var(--accent-color);
 } */
+
+
+/* Portfolio */
+
+.button-portfolio {
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid #F5F4FA;
+
+}
+.button-portfolio:hover, 
+.button-portfolio:focus {
+    color: #ffffff;
+    background-color: var(--accent-color);
+    
+}
+.all-content .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.all-content .text {
+    color: var(--primery-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+}
