@@ -223,6 +223,10 @@ body {
     background-color: var(--accent-color);
     
 }
+.all-content a {
+    text-decoration: none;
+}
+
 .all-content .title {
     color: var(--title-text-color);
     font-weight: 700;
