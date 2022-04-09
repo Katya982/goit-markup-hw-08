@@ -82,13 +82,11 @@ img {
     align-items: center;
 }
 
-.site-nav .item,
-.aside .item {
+.site-nav .item {
     margin-right: 50px;
 }
 
-.site-nav .item:last-child,
-.aside .item:last-child {
+.site-nav .item:last-child { 
     margin-right: 0px;
 }
 
@@ -149,17 +147,22 @@ img {
 
 .aside {
     display: flex;
-    margin-left: 331px;
-    /* margin-left: auto; */
+    margin-left: auto;
 }
 
 .aside .item {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
     text-align: center;
 }
 
 .aside-link {
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 25px;
+    padding-left: 25px;
+
     color: var(--primery-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -171,6 +174,8 @@ img {
 /*  hero */
 
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center; 
 }
 
@@ -227,7 +232,7 @@ img {
 }
 .features {
     padding-top: 94px;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .features-list,
@@ -241,7 +246,7 @@ img {
     margin-right: 30px;
 }
 
-.featureslist .item:last-child {
+.features-list .item:last-child {
     margin-right: 0px;
 }
 
@@ -350,10 +355,13 @@ img {
     width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
-    padding-top: 60px;
-    padding-bottom: 60px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-box {
@@ -432,6 +440,9 @@ img {
 }
 
 .all-content .title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -439,6 +450,9 @@ img {
     letter-spacing: 0.06em;
 }
 .all-content .text {
+    margin-top: 4px;
+    margin-bottom: 0px;
+
     color: var(--primery-text-color);
     font-size: 16px;
     line-height: 1.88;
@@ -454,9 +468,11 @@ img {
     margin-right: 30px;
     margin-bottom: 30px;
 }
+
 .project:nth-child(3n) {
     margin-right: 0px;
 }
+
 .project:nth-last-child(-n + 3) {
     margin-bottom: 0px;
 }
@@ -466,16 +482,6 @@ img {
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
-}
-
-.project .title {
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-
-.project .text {
-    margin-top: 4px;
-    margin-bottom: 0px;
 }
 
 /* .projects {
