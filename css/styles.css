@@ -82,11 +82,13 @@ img {
     align-items: center;
 }
 
-.site-nav .item {
+.site-nav .item,
+.aside .item {
     margin-right: 50px;
 }
 
-.site-nav .item:last-child { 
+.site-nav .item:last-child,
+.aside .item:last-child { 
     margin-right: 0px;
 }
 
@@ -157,18 +159,12 @@ img {
 }
 
 .aside-link {
-    display: inline-block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-right: 25px;
-    padding-left: 25px;
-
     color: var(--primery-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 /*  hero */
@@ -364,11 +360,10 @@ img {
     padding-bottom: 60px;
 }
 
-.footer-box {
-    margin-bottom: 20px;
-}
-
 .footer-logo {
+    display: block;
+    margin-bottom: 20px;
+
     color: #ffffff;
     font-family: Raleway, sans-serif;
     font-weight: 700;
