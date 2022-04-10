@@ -152,13 +152,12 @@ img {
     margin-left: auto;
 }
 
-.aside .item {
-    /* padding-top: 32px;
-    padding-bottom: 32px; */
-    text-align: center;
-}
-
 .aside-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: ;
+    
     color: var(--primery-text-color);
     font-weight: 500;
     font-size: 14px;
