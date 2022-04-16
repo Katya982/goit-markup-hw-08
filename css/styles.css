@@ -394,7 +394,8 @@ img {
     fill: currentColor;  
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
     color: #ffffff;
     background-color:var(--accent-color);
 }
@@ -449,12 +450,14 @@ img {
     fill: currentColor;
 }
 
-.clients-item:hover {
+.clients-item:hover,
+.clients-item:focus {
     outline: 1px solid var(--accent-color);
     border-radius: 4px;
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
     color: var(--accent-color);
 }
 
@@ -509,7 +512,8 @@ img {
     margin-right: 10px;
 }
 
-.socials-link:hover {
+.socials-link:hover,
+.socials-link:focus {
     color: #ffffff;
     background-color: var(--accent-color);
 }
@@ -618,7 +622,8 @@ img {
     margin-bottom: 30px;
 }
 
-.project:hover {
+.project:hover,
+.project:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
