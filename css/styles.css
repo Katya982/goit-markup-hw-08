@@ -402,6 +402,7 @@ img {
 /* clients */
 
 .clients-title {
+    margin-top: 0px;
     margin-bottom: 50px;
 
     color: var(--title-text-color);
@@ -421,6 +422,8 @@ img {
 }
 
 .clients-item {
+    width: 170px;
+    height: 92px;
     outline: 1px solid #AFB1B8;
     border-radius: 4px;
 }
@@ -431,13 +434,18 @@ img {
 
 .clients-link {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
     color: var(--icon-color);
   
 }
 .clients-icon {
-    padding: 16px 32px;
+    /* display: flex; */
+    margin-right: 0px;
+    width: 106px;
+    height: 60px;
     fill: currentColor;
 }
 
@@ -455,6 +463,7 @@ img {
 
 .container-footer {
     display: flex;
+    align-items: baseline;
     width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
@@ -474,6 +483,8 @@ img {
 }
 
 .socials-title {
+    margin: 0 0 20px 0;
+
     color: #ffffff;
     font-weight: 700;
     font-size: 14px;
@@ -482,10 +493,16 @@ img {
     text-transform: uppercase;
 }
 
+.socials-list {
+    display: flex;
+    margin: 0px;
+    padding: 0;
+}
+
 .socials-link {
     background-color: rgba(255, 255, 255, 0.1);
     background-position: center;
-    color: var(--icon-color);
+    color: #ffffff;
 }
 
 .socials-item:not(:last-child) {
@@ -599,7 +616,6 @@ img {
     width: calc((100% - 60px)/3);
     margin-right: 30px;
     margin-bottom: 30px;
-    
 }
 
 .project:hover {
