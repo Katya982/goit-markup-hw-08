@@ -32,13 +32,14 @@
         color: #ffffff;
         text-align: center;
         cursor: pointer;
+
+        &:hover,
+        &:focus {
+            color: #ffffff;
+            background-color: #188CE8;
+            
+        }
     }
 
-    &__button:hover,
-    &__button:focus {
-        color: #ffffff;
-        background-color: #188CE8;
-    
-    }
 }
 

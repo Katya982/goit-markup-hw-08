@@ -2,20 +2,24 @@
     border-bottom: 1px solid #ECECEC;
 
     &__logo {
-            padding-top: 24px;
-            padding-bottom: 25px;
-            margin-right: 93px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+        margin-right: 93px;
     
-            color: #000000;
-        }
-    
-        &__logo span {
+        color: #000000;
+
+        & span {
             color: $accent-color;
         }
+    }
+    
 }
 
 .head,
-.navigation,
+.navigation {
+    display: flex;
+}
+
 .navigation__list {
     display: flex;
 }
@@ -120,12 +124,13 @@
     &__tel {
         margin-right: 10px;
         fill: currentColor;
+
+        &:hover,
+        &:hover {
+            fill: $accent-color;
+        }
     }
 
-    &__mail:hover,
-    &__tel:hover {
-        fill: $accent-color;
-    }
 
     & .aside__item:not(:last-child) {
         margin-right: 50px;
