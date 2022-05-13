@@ -1,10 +1,10 @@
+// Utils //
+@import './utils/variables';
+@import './utils/vh';
+
 // Base //
-@import './base/variables';
 @import './base/base';
 @import './base/fonts';
-
-// Utils //
-@import './utils/vh';
 
 // Components //
 @import './components/clients';
