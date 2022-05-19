@@ -9,7 +9,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -25,7 +24,7 @@
               <a href="./index.html" class="navigation__link">Студия</a>
             </li>
             <li class="navigation__item">
-              <a href="./portfolio.html" class="navigation__link-portfolio"
+              <a href="./portfolio.html" class="navigation__link portfolio"
                 >Портфолио</a
               >
             </li>
@@ -34,24 +33,99 @@
             </li>
           </ul>
         </nav>
-        <ul class="aside list">
-          <li class="aside__item">
-            <a href="mailto:info@devstudio.com" class="aside__link">
-              <svg class="aside__mail" height="12px" width="16px">
-                <use href="./imeges/sprite-icon.svg#mail"></use>
-              </svg>
-              info@devstudio.com</a
+        <div class="aside__container">
+          <ul class="aside list">
+            <li class="aside__item">
+              <a class="aside__link" href="mailto:info@devstudio.com">
+                <svg class="aside__mail" height="12px" width="16px">
+                  <use href="./imeges/sprite-icon.svg#mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="aside__item">
+              <a class="aside__link" href="tel:+380961111111">
+                <svg class="aside__tel" height="16px" width="10px">
+                  <use href="./imeges/sprite-icon.svg#phone"></use>
+                </svg>
+                +380 96 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="modal-mobile">
+          <nav>
+            <button
+              class="modal-mobile__button"
+              type="button"
+              aria-expanded="false"
+              aria-controls="modal-mobile"
+              style="z-index: 100"
+              data-menu-button
             >
-          </li>
-          <li class="aside__item">
-            <a href="tel:+380961111111" class="aside__link">
-              <svg class="aside__tel" height="16px" width="10px">
-                <use href="./imeges/sprite-icon.svg#phone"></use>
+              <svg
+                width="40"
+                height="40"
+                aria-label="переключатель мобильного меню"
+              >
+                <use
+                  class="icon-cross"
+                  href="./imeges/modal-icon.svg#cross_40px"
+                ></use>
+                <use
+                  class="icon-menu"
+                  href="./imeges/modal-icon.svg#menu_40px"
+                ></use>
               </svg>
-              +380 96 111 11 11
-            </a>
-          </li>
-        </ul>
+            </button>
+            <div class="modal-mobile__navigation" id="modal-mobile" data-menu>
+              <ul class="modal-mobile__list list">
+                <li class="modal-mobile__item">
+                  <a href="./index.html" class="modal-mobile__link">Студия</a>
+                </li>
+                <li class="modal-mobile__item">
+                  <a
+                    href="./portfolio.html"
+                    class="modal-mobile__link portfolio"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="modal-mobile__item">
+                  <a href="" class="modal-mobile__link">Контакты</a>
+                </li>
+              </ul>
+              <ul class="contacts list">
+                <li class="contacts__item-tel">
+                  <a class="contacts__link-tel" href="tel:+380961111111">
+                    +380 96 111 11 11</a
+                  >
+                </li>
+                <li class="contacts__item-mail">
+                  <a
+                    class="contacts__link-mail"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="social-media list">
+                <li class="social-media__item">
+                  <a class="social-media__link" href="#">Instagram</a>
+                </li>
+                <li class="social-media__item">
+                  <a class="social-media__link" href="#">Twitter</a>
+                </li>
+                <li class="social-media__item">
+                  <a class="social-media__link" href="#">Facebook</a>
+                </li>
+                <li class="social-media__item">
+                  <a class="social-media__link" href="#">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -85,12 +159,38 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__thumb">
-                  <img
-                    src="./imeges/tehnokrak.jpg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-display1@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-display1@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-tab1@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-tab1@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-mob1@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-mob1@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      src="./imeges/tehnokrak.jpg"
+                      alt="ноутбук"
+                      sizes="(min-width: 1200px) 270px,
+                      (min-width: 768px) 354px,
+                      (min-width: 320px) 450px"
+                      alt="сотрудник фирмы"
+                    />
+                  </picture>
                   <div class="projects__text">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -100,7 +200,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="projects__content">
+                <div class="projects__content first">
                   <h3 class="projects__title">Технокряк</h3>
                   <p class="projects__subtitle">Веб-сайт</p>
                 </div>
@@ -109,12 +209,37 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__thumb">
-                  <img
-                    src="./imeges/neworlean-goldenstar.jpg"
-                    alt="постер"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-display2@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-display2@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-tab2@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-tab2@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-mob2@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-mob2@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./imeges/neworlean-goldenstar.jpg"
+                      alt="постер"
+                      sizes="(min-width: 1200px) 270px,
+                        (min-width: 768px) 354px,
+                        (min-width: 320px) 450px"
+                      alt="сотрудник фирмы"
+                    />
+                  </picture>
                   <div class="projects__text">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -135,12 +260,37 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__thumb">
-                  <img
-                    src="./imeges/seafood.jpg"
-                    alt="постер ресторана морепродуктов"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-display3@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-display3@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-tab3@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-tab3@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-mob3@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-mob3@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./imeges/seafood.jpg"
+                      alt="постер ресторана морепродуктов"
+                      sizes="(min-width: 1200px) 270px,
+                      (min-width: 768px) 354px,
+                      (min-width: 320px) 450px"
+                      alt="сотрудник фирмы"
+                    />
+                  </picture>
                   <div class="projects__text">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -159,12 +309,37 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__thumb">
-                  <img
-                    src="./imeges/prime.jpg"
-                    alt="наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-display4@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-display4@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-tab4@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-tab4@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-mob4@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-mob4@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./imeges/prime.jpg"
+                      alt="наушники"
+                      sizes="(min-width: 1200px) 270px,
+                      (min-width: 768px) 354px,
+                      (min-width: 320px) 450px"
+                      alt="сотрудник фирмы"
+                    />
+                  </picture>
                   <div class="projects__text">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -183,12 +358,37 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__thumb">
-                  <img
-                    src="./imeges/boxes.jpg"
-                    alt="две коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-display5@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-display5@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-tab5@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-tab5@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-mob5@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-mob5@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./imeges/boxes.jpg"
+                      alt="две коробки"
+                      sizes="(min-width: 1200px) 270px,
+                      (min-width: 768px) 354px,
+                      (min-width: 320px) 450px"
+                      alt="сотрудник фирмы"
+                    />
+                  </picture>
                   <div class="projects__text">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -207,12 +407,37 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__thumb">
-                  <img
-                    src="./imeges/inspiration-has-no-borders.jpg"
-                    alt="компьютер"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-display6@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-display6@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-tab6@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-tab6@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-mob6@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-mob6@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./imeges/inspiration-has-no-borders.jpg"
+                      alt="компьютер"
+                      sizes="(min-width: 1200px) 270px,
+                      (min-width: 768px) 354px,
+                      (min-width: 320px) 450px"
+                      alt="сотрудник фирмы"
+                    />
+                  </picture>
                   <div class="projects__text">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -231,12 +456,37 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__thumb">
-                  <img
-                    src="./imeges/limited-edition.jpg"
-                    alt="открытая книга"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-display7@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-display7@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-tab7@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-tab7@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-mob7@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-mob7@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./imeges/limited-edition.jpg"
+                      alt="открытая книга"
+                      sizes="(min-width: 1200px) 270px,
+                      (min-width: 768px) 354px,
+                      (min-width: 320px) 450px"
+                      alt="сотрудник фирмы"
+                    />
+                  </picture>
                   <div class="projects__text">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -255,12 +505,37 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__thumb">
-                  <img
-                    src="./imeges/lab.jpg"
-                    alt="этикетка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-display8@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-display8@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-tab8@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-tab8@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-mob8@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-mob8@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./imeges/lab.jpg"
+                      alt="этикетка"
+                      sizes="(min-width: 1200px) 270px,
+                      (min-width: 768px) 354px,
+                      (min-width: 320px) 450px"
+                      alt="сотрудник фирмы"
+                    />
+                  </picture>
                   <div class="projects__text">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -279,12 +554,37 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__thumb">
-                  <img
-                    src="./imeges/growing-business.jpg"
-                    alt="открытый ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-display9@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-display9@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-tab9@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-tab9@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-mob9@1x.jpg,
+                        ./imeges/portfolio.img/portfolio-mob9@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./imeges/growing-business.jpg"
+                      alt="открытый ноутбук"
+                      sizes="(min-width: 1200px) 270px,
+                      (min-width: 768px) 354px,
+                      (min-width: 320px) 450px"
+                      alt="сотрудник фирмы"
+                    />
+                  </picture>
                   <div class="projects__text">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -313,11 +613,15 @@
           </a>
 
           <address class="footer__contacts">
-            г. Киев, пр-т Леси Украинки, 26
+            <span class="footer__adress">г. Киев, пр-т Леси Украинки, 26</span>
 
-            <ul class="list">
-              <li><a href="mailto:info@example.com">info@example.com</a></li>
-              <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+            <ul class="footer__link list">
+              <li class="footer__link--mail">
+                <a href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="footer__link--tel">
+                <a href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
             </ul>
           </address>
         </div>
@@ -365,15 +669,16 @@
               name="sub"
               placeholder="E-mail"
             />
+            <button class="subscribe__button button" type="submit">
+              Подписаться
+              <svg class="subscribe__icon">
+                <use href="./imeges/modal-icon.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
-          <button class="subscribe__button button" type="submit">
-            Подписаться
-            <svg class="subscribe__icon">
-              <use href="./imeges/modal-icon.svg#icon-send"></use>
-            </svg>
-          </button>
         </div>
       </div>
     </footer>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>

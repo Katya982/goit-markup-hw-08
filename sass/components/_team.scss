@@ -4,6 +4,13 @@
 
     background-color: #f5f4fa;
 
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+
+
     &__title {
         margin-top: 0;
         margin-bottom: 50px;
@@ -39,10 +46,26 @@
     
     &__list {
         display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        // @media screen and (min-width: 768px) {
+        //     gap: 30px;
+        // }
     }
     
-    &__item:not(:last-child) {
-        margin-right: 30px;
+    &__item {
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            // height: 536px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+
     }
     
     &__title {
