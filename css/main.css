@@ -369,13 +369,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 480px) {
-  .clients {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .clients {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -526,7 +520,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1199px) {
   .features {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -607,6 +601,11 @@ img {
     width: 100%;
   }
 }
+@media screen and (max-width: 768px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .features__item {
     width: 354px;
@@ -615,9 +614,6 @@ img {
 @media screen and (min-width: 1200px) {
   .features__item {
     width: 270px;
-  }
-  .features__item :not(:last-child) {
-    margin-right: 30px;
   }
 }
 .features__title {
@@ -640,14 +636,9 @@ img {
   font-size: 14px;
   line-height: 1.7;
 }
-@media screen and (max-width: 480px) {
-  .features__text {
+@media screen and (max-width: 768px) {
+  .features__text :not(:last-child) {
     margin-bottom: 30px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .features__text :last-child {
-    margin-bottom: 0px;
   }
 }
 
@@ -656,13 +647,7 @@ img {
   padding-bottom: 60px;
   background-color: #2f303a;
 }
-@media screen and (max-width: 480px) {
-  .footer__adress {
-    display: block;
-    margin-bottom: 8px;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .footer__adress {
     display: block;
     margin-bottom: 8px;
