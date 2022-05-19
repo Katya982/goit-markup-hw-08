@@ -6,37 +6,37 @@
     margin-right: auto;
 
     @media screen and (min-width: 320px) {
-           background-image: url(../../imeges/hero.img/headermob@1x.jpg), linear-gradient(to right,
+           background-image: url(../../imeges/hero.img/header-mob@1x.jpg), linear-gradient(to right,
                 rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)); 
     
            @media (min-device-pixel-ratio),
            (min-resolution: 2dppx),
             (min-resolution: 192dpi) {
-               background-image: url(../../imeges/hero.img/headermob@2x.jpg), linear-gradient(to right,
+               background-image: url(../../imeges/hero.img/header-mob@2x.jpg), linear-gradient(to right,
                     rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
            }
         }    
     
         @media screen and (min-width: 768px) {
-            background-image: url(../../imeges/hero.img/headertablet@1x.jpg), linear-gradient(to right,
+            background-image: url(../../imeges/hero.img/header-tablet@1x.jpg), linear-gradient(to right,
                     rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     
             @media (min-device-pixel-ratio),
             (min-resolution: 2dppx),
             (min-resolution: 192dpi) {
-                background-image: url(../../imeges/hero.img/headertablet@2x.jpg), linear-gradient(to right,
+                background-image: url(../../imeges/hero.img/header-tablet@2x.jpg), linear-gradient(to right,
                         rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
             }
         }
     
         @media screen and (min-width: 1200px) {
-            background-image: url(../../imeges/hero.img/headerdisplay@1x.jpg), linear-gradient(to right,
+            background-image: url(../../imeges/hero.img/header-display@1x.jpg), linear-gradient(to right,
                     rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     
             @media (min-device-pixel-ratio),
             (min-resolution: 2dppx),
             (min-resolution: 192dpi) {
-                background-image: url(../../imeges/hero.img/headerdisplay@2x.jpg), linear-gradient(to right,
+                background-image: url(../../imeges/hero.img/header-display@2x.jpg), linear-gradient(to right,
                         rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
             }
         }
