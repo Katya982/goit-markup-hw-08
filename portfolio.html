@@ -79,21 +79,23 @@
               </svg>
             </button>
             <div class="modal-mobile__navigation" id="modal-mobile" data-menu>
-              <ul class="modal-mobile__list list">
-                <li class="modal-mobile__item">
-                  <a href="./index.html" class="modal-mobile__link">Студия</a>
-                </li>
-                <li class="modal-mobile__item">
-                  <a
-                    href="./portfolio.html"
-                    class="modal-mobile__link portfolio"
-                    >Портфолио</a
-                  >
-                </li>
-                <li class="modal-mobile__item">
-                  <a href="" class="modal-mobile__link">Контакты</a>
-                </li>
-              </ul>
+              <div class="modal-mobile__nav">
+                <ul class="modal-mobile__list list">
+                  <li class="modal-mobile__item">
+                    <a href="./index.html" class="modal-mobile__link">Студия</a>
+                  </li>
+                  <li class="modal-mobile__item">
+                    <a
+                      href="./portfolio.html"
+                      class="modal-mobile__link portfolio"
+                      >Портфолио</a
+                    >
+                  </li>
+                  <li class="modal-mobile__item">
+                    <a href="" class="modal-mobile__link">Контакты</a>
+                  </li>
+                </ul>
+              </div>
               <ul class="contacts list">
                 <li class="contacts__item-tel">
                   <a class="contacts__link-tel" href="tel:+380961111111">
@@ -183,16 +185,21 @@
                     />
 
                     <img
-                      src="./imeges/tehnokrak.jpg"
+                      class="portfolio__img"
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-display1@1x.jpg 270w,
+                        ./imeges/portfolio.img/portfolio-tab1@1x.jpg     354w,
+                        ./imeges/portfolio.img/portfolio-mob1@1x.jpg     450w
+                      "
                       alt="ноутбук"
                       sizes="(min-width: 1200px) 270px,
                       (min-width: 768px) 354px,
                       (min-width: 320px) 450px"
-                      alt="сотрудник фирмы"
+                      src="./imeges/tehnokrak.jpg"
                     />
                   </picture>
                   <div class="projects__text">
-                    <p>
+                    <p class="text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -232,12 +239,17 @@
                       media="(min-width: 320px)"
                     />
                     <img
-                      src="./imeges/neworlean-goldenstar.jpg"
+                      class="portfolio__img"
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-display2@1x.jpg 270w,
+                        ./imeges/portfolio.img/portfolio-tab2@1x.jpg     354w,
+                        ./imeges/portfolio.img/portfolio-mob2@1x.jpg     450w
+                      "
                       alt="постер"
                       sizes="(min-width: 1200px) 270px,
                         (min-width: 768px) 354px,
                         (min-width: 320px) 450px"
-                      alt="сотрудник фирмы"
+                      src="./imeges/neworlean-goldenstar.jpg"
                     />
                   </picture>
                   <div class="projects__text">
@@ -283,12 +295,17 @@
                       media="(min-width: 320px)"
                     />
                     <img
-                      src="./imeges/seafood.jpg"
+                      class="portfolio__img"
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-display3@1x.jpg 270w,
+                        ./imeges/portfolio.img/portfolio-tab3@1x.jpg     354w,
+                        ./imeges/portfolio.img/portfolio-mob3@1x.jpg     450w
+                      "
                       alt="постер ресторана морепродуктов"
                       sizes="(min-width: 1200px) 270px,
                       (min-width: 768px) 354px,
                       (min-width: 320px) 450px"
-                      alt="сотрудник фирмы"
+                      src="./imeges/seafood.jpg"
                     />
                   </picture>
                   <div class="projects__text">
@@ -332,12 +349,17 @@
                       media="(min-width: 320px)"
                     />
                     <img
-                      src="./imeges/prime.jpg"
+                      class="portfolio__img"
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-display4@1x.jpg 270w,
+                        ./imeges/portfolio.img/portfolio-tab4@1x.jpg     354w,
+                        ./imeges/portfolio.img/portfolio-mob4@1x.jpg     450w
+                      "
                       alt="наушники"
                       sizes="(min-width: 1200px) 270px,
                       (min-width: 768px) 354px,
                       (min-width: 320px) 450px"
-                      alt="сотрудник фирмы"
+                      src="./imeges/prime.jpg"
                     />
                   </picture>
                   <div class="projects__text">
@@ -381,12 +403,17 @@
                       media="(min-width: 320px)"
                     />
                     <img
-                      src="./imeges/boxes.jpg"
+                      class="portfolio__img"
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-display5@1x.jpg 270w,
+                        ./imeges/portfolio.img/portfolio-tab5@1x.jpg     354w,
+                        ./imeges/portfolio.img/portfolio-mob5@1x.jpg     450w
+                      "
                       alt="две коробки"
                       sizes="(min-width: 1200px) 270px,
                       (min-width: 768px) 354px,
                       (min-width: 320px) 450px"
-                      alt="сотрудник фирмы"
+                      src="./imeges/boxes.jpg"
                     />
                   </picture>
                   <div class="projects__text">
@@ -430,12 +457,17 @@
                       media="(min-width: 320px)"
                     />
                     <img
-                      src="./imeges/inspiration-has-no-borders.jpg"
+                      class="portfolio__img"
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-display6@1x.jpg 270w,
+                        ./imeges/portfolio.img/portfolio-tab6@1x.jpg     354w,
+                        ./imeges/portfolio.img/portfolio-mob6@1x.jpg     450w
+                      "
                       alt="компьютер"
                       sizes="(min-width: 1200px) 270px,
                       (min-width: 768px) 354px,
                       (min-width: 320px) 450px"
-                      alt="сотрудник фирмы"
+                      src="./imeges/inspiration-has-no-borders.jpg"
                     />
                   </picture>
                   <div class="projects__text">
@@ -479,12 +511,17 @@
                       media="(min-width: 320px)"
                     />
                     <img
-                      src="./imeges/limited-edition.jpg"
+                      class="portfolio__img"
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-display7@1x.jpg 270w,
+                        ./imeges/portfolio.img/portfolio-tab7@1x.jpg     354w,
+                        ./imeges/portfolio.img/portfolio-mob7@1x.jpg     450w
+                      "
                       alt="открытая книга"
                       sizes="(min-width: 1200px) 270px,
                       (min-width: 768px) 354px,
                       (min-width: 320px) 450px"
-                      alt="сотрудник фирмы"
+                      src="./imeges/limited-edition.jpg"
                     />
                   </picture>
                   <div class="projects__text">
@@ -528,12 +565,17 @@
                       media="(min-width: 320px)"
                     />
                     <img
-                      src="./imeges/lab.jpg"
+                      class="portfolio__img"
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-display8@1x.jpg 270w,
+                        ./imeges/portfolio.img/portfolio-tab8@1x.jpg     354w,
+                        ./imeges/portfolio.img/portfolio-mob8@1x.jpg     450w
+                      "
                       alt="этикетка"
                       sizes="(min-width: 1200px) 270px,
                       (min-width: 768px) 354px,
                       (min-width: 320px) 450px"
-                      alt="сотрудник фирмы"
+                      src="./imeges/lab.jpg"
                     />
                   </picture>
                   <div class="projects__text">
@@ -577,12 +619,17 @@
                       media="(min-width: 320px)"
                     />
                     <img
-                      src="./imeges/growing-business.jpg"
-                      alt="открытый ноутбук"
+                      class="portfolio__img"
+                      srcset="
+                        ./imeges/portfolio.img/portfolio-display9@1x.jpg 270w,
+                        ./imeges/portfolio.img/portfolio-tab9@1x.jpg     354w,
+                        ./imeges/portfolio.img/portfolio-mob9@1x.jpg     450w
+                      "
                       sizes="(min-width: 1200px) 270px,
                       (min-width: 768px) 354px,
                       (min-width: 320px) 450px"
-                      alt="сотрудник фирмы"
+                      alt="открытый ноутбук"
+                      src="./imeges/growing-business.jpg"
                     />
                   </picture>
                   <div class="projects__text">

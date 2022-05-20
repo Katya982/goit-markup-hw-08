@@ -4,6 +4,10 @@
         display: none;
     }
 
+    &__nav {
+        flex-grow: 1;
+    }
+
 }
 
 .modal-mobile__button {
@@ -13,8 +17,6 @@
     border: none;
     background-color: transparent;
     
-    margin-top: 10px;
-    margin-right: 15px;
     position: relative;
     margin-left: auto;
     
@@ -57,13 +59,16 @@
     position: absolute;
 }
 
+
 .modal-mobile__navigation {
     opacity: 0;
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    bottom: 0;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 796px;
     background-color: #ffffff;
     padding: 48px 40px 48px 40px;
 
@@ -84,17 +89,6 @@
     }
 }
 
-.modal-mobile__list {
-    margin-bottom: 302px;
-
-    @media screen and (max-width: 445px) {
-        margin-bottom: 260px;
-    }
-
-    @media screen and (max-width: 375px) {
-        margin-bottom: 220px;
-    }
-}
 
 .modal-mobile__item {
     &:not(:last-child) {
