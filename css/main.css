@@ -811,6 +811,9 @@ img {
 }
 .subscribe__button {
   position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   color: #ffffff;
   padding: 10px 62px 10px 29px;
   margin-left: 12px;
